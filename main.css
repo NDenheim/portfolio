@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Poiret+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2fffc;
+}
+
+.margin {
+  margin: 30px;
+  font-size: 17px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation__heading {
+  font-size: 24px;
+}
+.navigation__links {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poiret One", cursive;
+  color: #286e8a;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+header h1 {
+  font-size: 75px;
+  margin: 100px 0;
+}
+
+.about__heading {
+  margin: 70px 0;
+  font-weight: bold;
+}
+.about__img {
+  margin: 0 auto 40px auto;
+  height: auto;
+  width: 60vw;
+  display: block;
+}
+.about__p {
+  margin-bottom: 30px;
+}
+
+.skills {
+  display: none;
+}
+
+#project4,
+#project5,
+#project6 {
+  display: none;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__heading {
+  font-size: 70px;
+  margin: 50px;
+  text-align: center;
+}
+.contact__button {
+  background-color: #f2fffc;
+  width: 270px;
+  height: 80px;
+  margin-bottom: 60px;
+}
+.contact__button:hover {
+  background-color: #286e8a;
+}
+.contact__button a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  background-color: transparent;
+}
+
+footer {
+  height: 114px;
+  width: 100%;
+  background-color: #286e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 0 0;
+}
+footer .contact__icons {
+  background-color: #286e8a;
+}
+footer .contact__icons a {
+  background-color: #286e8a;
+}
+footer img {
+  height: 60%;
+  margin: 0 10px;
+  background-color: #286e8a;
+}
+
+@media screen and (min-width: 900px) {
+  .margin {
+    margin: 50px 8% 0 8%;
+    font-size: 20px;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation__heading {
+    font-size: 32px;
+  }
+  .navigation__links {
+    list-style-type: none;
+    display: flex;
+  }
+  .navigation__links a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+  }
+  .navigation__links a:hover {
+    color: #286e8a;
+  }
+  h3 {
+    font-size: 32px;
+  }
+  header {
+    margin: 0 30px;
+  }
+  header h1 {
+    font-size: 7vw;
+    margin: 100px 0;
+    text-align: center;
+  }
+  header .header__statement {
+    font-size: 20px;
+    width: 50%;
+  }
+  .about {
+    height: 400px;
+    margin: 75px 0;
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    grid-template-columns: 65% 35%;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .about__heading {
+    margin: 70px 0;
+    font-weight: bold;
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .about__img {
+    height: 390px;
+    width: auto;
+    grid-row: 1/4;
+    grid-column: 2/3;
+    justify-self: right;
+    align-self: center;
+    margin: unset;
+  }
+  .about__p {
+    margin-bottom: 30px;
+  }
+  .skills {
+    margin: 120px 0;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 20% 80%;
+    row-gap: 20px;
+  }
+  .skills__heading {
+    grid-area: 1/1/2/2;
+  }
+  .skills__description {
+    grid-area: 1/2/2/3;
+  }
+  .skills__image {
+    grid-area: 2/1/3/3;
+    justify-self: center;
+  }
+  .skills__image img {
+    margin: 0 20px;
+  }
+  #project4,
+  #project5,
+  #project6 {
+    display: unset;
+  }
+}
+.portfolio h3 {
+  margin-top: 60px;
+}
+.portfolio .projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.portfolio .projects__box {
+  margin-top: 20px;
+  width: 325px;
+  height: 265px;
+  background-color: #286e8a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+.portfolio .projects__box--one {
+  width: 325px;
+  height: 265px;
+}
+.portfolio .projects__description {
+  margin: 10px 0;
+  height: 50px;
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+}
+.portfolio .projects__description h4 {
+  margin: auto 0px;
+  font-size: 28px;
+}
+.portfolio .projects__features {
+  display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .portfolio h3 {
+    margin: 30px 0;
+  }
+  .portfolio .projects {
+    margin: 0 auto 60px auto;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+  }
+  .portfolio .projects__box {
+    margin-top: 20px;
+    width: 430px;
+    height: 300px;
+    color: #286e8a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+  }
+  .portfolio .projects__box--one {
+    width: 430px;
+    height: 300px;
+  }
+  .portfolio .projects__description {
+    margin: 10px 0;
+    height: 50px;
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolio .projects__description h4 {
+    margin: auto 0px;
+    font-size: 28px;
+  }
+  .portfolio .projects__features {
+    list-style-type: none;
+    display: flex;
+  }
+  .portfolio .projects__features li {
+    margin-right: 40px;
+  }
+}/*# sourceMappingURL=main.css.map */
