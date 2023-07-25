@@ -10,7 +10,7 @@
 
 .margin {
   margin: 30px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .navigation {
@@ -40,7 +40,7 @@ h3 {
 
 header {
   h1 {
-    font-size: 75px;
+    font-size: 20vw;
     margin: 100px 0;
   }
 }
@@ -127,10 +127,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .margin {
     margin: 50px 8% 0 8%;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .navigation {
@@ -171,7 +171,6 @@ footer {
     }
 
     .header__statement {
-      font-size: 20px;
       width: 50%;
     }
   }

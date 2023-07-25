@@ -9,7 +9,7 @@
 
 .margin {
   margin: 30px;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .navigation {
@@ -36,7 +36,7 @@ h3 {
 }
 
 header h1 {
-  font-size: 75px;
+  font-size: 20vw;
   margin: 100px 0;
 }
 
@@ -111,10 +111,10 @@ footer img {
   background-color: #286e8a;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .margin {
     margin: 50px 8% 0 8%;
-    font-size: 20px;
+    font-size: 18px;
   }
   .navigation {
     display: flex;
@@ -147,7 +147,6 @@ footer img {
     text-align: center;
   }
   header .header__statement {
-    font-size: 20px;
     width: 50%;
   }
   .about {
@@ -242,7 +241,7 @@ footer img {
   display: none;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 768px) {
   .portfolio h3 {
     margin: 30px 0;
   }
@@ -251,12 +250,12 @@ footer img {
     display: grid;
     justify-items: center;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(435px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .portfolio .projects__box {
     margin-top: 20px;
-    width: 430px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
     color: #286e8a;
     color: white;
     display: flex;
@@ -266,13 +265,59 @@ footer img {
     font-size: 25px;
   }
   .portfolio .projects__box--one {
-    width: 430px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
   .portfolio .projects__description {
     margin: 10px 0;
     height: 50px;
-    width: 430px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .portfolio .projects__description h4 {
+    margin: auto 0px;
+    font-size: 28px;
+  }
+  .portfolio .projects__features {
+    list-style-type: none;
+    display: flex;
+  }
+  .portfolio .projects__features li {
+    margin-right: 40px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .portfolio h3 {
+    margin: 30px 0;
+  }
+  .portfolio .projects {
+    margin: 0 auto 60px auto;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+  }
+  .portfolio .projects__box {
+    margin-top: 20px;
+    width: 370px;
+    height: 250px;
+    color: #286e8a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 25px;
+  }
+  .portfolio .projects__box--one {
+    width: 370px;
+    height: 250px;
+  }
+  .portfolio .projects__description {
+    margin: 10px 0;
+    height: 50px;
+    width: 370px;
     display: flex;
     justify-content: space-between;
   }
