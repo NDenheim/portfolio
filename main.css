@@ -267,6 +267,7 @@ footer img {
   .portfolio .projects__box--one {
     width: 300px;
     height: 200px;
+    border: 2px solid #286e8a;
   }
   .portfolio .projects__description {
     margin: 10px 0;
@@ -313,6 +314,7 @@ footer img {
   .portfolio .projects__box--one {
     width: 370px;
     height: 250px;
+    border: 2px solid #286e8a;
   }
   .portfolio .projects__description {
     margin: 10px 0;
