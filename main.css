@@ -79,6 +79,7 @@ header h1 {
   width: 270px;
   height: 80px;
   margin-bottom: 60px;
+  border: 2px solid black;
 }
 .contact__button:hover {
   background-color: #286e8a;
@@ -206,27 +207,7 @@ footer img {
 }
 @media screen and (min-width: 1000px) {
   .margin {
-    margin: 50px 8% 0 8%;
     font-size: 18px;
-  }
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-  }
-  .navigation__heading {
-    font-size: 32px;
-  }
-  .navigation__links {
-    list-style-type: none;
-    display: flex;
-  }
-  .navigation__links a {
-    margin: 0 20px;
-    text-decoration: none;
-    color: black;
-  }
-  .navigation__links a:hover {
-    color: #286e8a;
   }
   h3 {
     font-size: 32px;
@@ -268,23 +249,6 @@ footer img {
   }
   .about__p {
     margin-bottom: 30px;
-  }
-  .skills {
-    margin: 120px 0;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 20% 80%;
-    row-gap: 20px;
-  }
-  .skills__heading {
-    grid-area: 1/1/2/2;
-  }
-  .skills__description {
-    grid-area: 1/2/2/3;
-  }
-  .skills__image {
-    grid-area: 2/1/3/3;
-    justify-self: center;
   }
   .skills__image img {
     margin: 0 20px;
@@ -360,15 +324,7 @@ footer img {
     border: 2px solid #286e8a;
   }
   .portfolio .projects__description {
-    margin: 10px 0;
-    height: 50px;
     width: 260px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .portfolio .projects__description h4 {
-    margin: auto 0px;
-    font-size: 28px;
   }
   .portfolio .projects__features {
     list-style-type: none;
@@ -379,91 +335,35 @@ footer img {
   }
 }
 @media screen and (min-width: 1150px) {
-  .portfolio h3 {
-    margin: 30px 0;
-  }
   .portfolio .projects {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   }
   .portfolio .projects__box {
     width: 300px;
     height: 200px;
-    background-color: #286e8a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 25px;
   }
   .portfolio .projects__box img {
     width: 300px;
     height: 200px;
-    border: 2px solid #286e8a;
   }
   .portfolio .projects__description {
-    margin: 10px 0;
-    height: 50px;
     width: 300px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .portfolio .projects__description h4 {
-    margin: auto 0px;
-    font-size: 28px;
-  }
-  .portfolio .projects__features {
-    list-style-type: none;
-    display: flex;
-  }
-  .portfolio .projects__features li {
-    margin-right: 40px;
   }
 }
 @media screen and (min-width: 1400px) {
-  .portfolio h3 {
-    margin: 30px 0;
-  }
   .portfolio .projects {
-    margin: 0 auto 60px auto;
-    display: grid;
-    justify-items: center;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
   }
   .portfolio .projects__box {
     margin-top: 20px;
     width: 370px;
     height: 250px;
-    background-color: #286e8a;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Montserrat", sans-serif;
-    font-size: 25px;
   }
   .portfolio .projects__box img {
     width: 370px;
     height: 250px;
-    border: 2px solid #286e8a;
   }
   .portfolio .projects__description {
-    margin: 10px 0;
-    height: 50px;
     width: 370px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .portfolio .projects__description h4 {
-    margin: auto 0px;
-    font-size: 28px;
-  }
-  .portfolio .projects__features {
-    list-style-type: none;
-    display: flex;
-  }
-  .portfolio .projects__features li {
-    margin-right: 40px;
   }
 }/*# sourceMappingURL=main.css.map */
