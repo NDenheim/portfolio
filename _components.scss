@@ -1,6 +1,18 @@
 @use "./variables" as *;
 
 .portfolio {
+  &__info {
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+    font-size: 1.5vw;
+
+    img {
+      height: 1.5rem;
+      margin: 0 1vw;
+    }
+  }
+
   h3 {
     margin-top: 60px;
   }
@@ -47,6 +59,10 @@
     display: none;
   }
 }
+
+// .portfolio__info {
+//   display: flex;
+// }
 
 @media screen and (min-width: 768px) {
   .portfolio {
